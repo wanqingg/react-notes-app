@@ -2,6 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Introduction
+
+### Reference
+
+[https://www.youtube.com/watch?v=8KB3DHI-QbM](https://www.youtube.com/watch?v=8KB3DHI-QbM)
+
+### Features
+
+- Search
+- View all
+- Delete
+- Add
+- Save to localStorage
+- Toggle mode
+- Confirmation to delete
+- [ ] Edit
+
+### How to Install
+
+Run `npm install` to install all dependencies.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -68,18 +89,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### Reference
-
-[https://www.youtube.com/watch?v=8KB3DHI-QbM](https://www.youtube.com/watch?v=8KB3DHI-QbM)
-
-### Features
-
-- Search
-- View all
-- Delete
-- Add
-- Save to localStorage
-- Toggle mode
-- Confirmation to delete
-  [ ] Edit
