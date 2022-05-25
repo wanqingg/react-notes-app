@@ -39,7 +39,11 @@ const Notes = ({ query, isDelete, setIsDelete }) => {
   }, [query]);
 
   useEffect(() => {
-    localStorage.setItem("RNA-list", JSON.stringify(list));
+    if (list) {
+      localStorage.setItem("RNA-list", JSON.stringify(list));
+    } else {
+      setList([]);
+    }
   }, [list]);
 
   useEffect(() => {
