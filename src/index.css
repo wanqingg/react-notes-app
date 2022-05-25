@@ -5,9 +5,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: all 0.3s linear;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.place-items-center {
+  place-items: center
+}
+
+.btn-light {
+  background-color: #dcdde0;
+  border-color: #dcdde0;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  padding: .1rem .75rem;
+}
+
+/**
+* Dark mode
+*/
+body.dark-mode {
+  background-color: #202124;
+}
+body.dark-mode h1 {
+  color: #FFF;
+}
+
+/**
+* Search Bar
+*/
+.ms-n5 {
+  margin-left: -40px;
+}
+.bg-grey,
+.bg-grey:focus {
+  background-color: #e7e7e7;
+}
+
+/**
+* Note
+*/
+.notes-row {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+}
+.single-note {
+  background-color: #fff57f;
+  padding: 1rem;
+  border-radius: 7px;
+  height: 100%;
+}
+.single-note.add {
+  background-color: #5bd1c3;
+}
+.note-text {
+  min-height: 200px;
+}
+.form-textarea,
+.form-textarea:focus {
+  border: 0;
+  outline: 0;
+  resize: none;
+  background-color: transparent;
+}
+/**
+* Modal
+*/

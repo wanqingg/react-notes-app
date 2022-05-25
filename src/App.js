@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Header, Search, Notes, Modal } from "./components";
+import { useState } from "react";
 function App() {
+  const [query, setQuery] = useState("");
+  const [isDelete, setIsDelete] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container">
+      <Header />
+      <Search setQuery={setQuery} query={query} />
+      <Notes query={query} isDelete={isDelete} setIsDelete={setIsDelete} />
+      <Modal setIsDelete={setIsDelete} />
+    </main>
   );
 }
 
 export default App;
+
+// # Features
+// Search
+// View all
+// Delete
+// Add
+// Save to localStorage
+// -- Edit
+// Toggle mode
+// Confirmation to delete
